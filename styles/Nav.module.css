@@ -107,7 +107,8 @@
   .hamburger {
     position: relative;
     display: block;
-    width: 35px;
+    min-width: 35px;
+    min-height: 35px;
     cursor: pointer;
     z-index: 100;
     appearance: none;
