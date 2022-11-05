@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-width: 100%;
+  display: flex;
+  padding: 2% 5%;
+  height: 6vh;
+  color: var(--headline);
+  justify-content: space-between;
+}
+
+.leftSide {
+  font-size: x-large;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  height: 35px;
+  width: 35px;
+  border: 2px solid var(--headline);
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+}
+
+.navLink {
+  margin-right: 4vw;
+  padding: 15px;
+  border: none;
+  font-size: larger;
+  font-weight: bold;
+  transition: .2s;
+}
+
+.navLink:hover {
+  cursor: pointer;
+  opacity: 60%;
+}
+
+#hireMe {
+  padding: 8px 18px;
+  margin-right: 3vw;
+  background-color: transparent;
+  color: var(--headline);
+  border: 1px solid var(--headline);
+  cursor: pointer;
+  position: relative;
+}
+
+#hireMe::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: var(--headline);
+  transition:  transform 200ms ease-in-out;
+
+  transform: scalex(0);
+}
+
+#hireMe:hover::before {
+  transform: scaleX(1);
+}
+
+.hamburger {
+  display: none;
+}
+
+.mobileNav {
+  display: none;
+}
+
+@media screen and (max-width: 875px) {
+
+  .navBar {
+    margin-top: 40px;
+  }
+
+  #name {
+    display: none;
+  }
+
+  .rightSide {
+    display: none;
+  }
+
+  #logo {
+    margin-top: 15px;
+  }
+
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    z-index: 100;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+  
+  .hamburger .bar, .hamburger:after, .hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--headline);
+    margin: 6px 0px;
+    transition: 400ms;
+  }
+  
+  .hamburger.isActive:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+  
+  .hamburger.isActive:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+  
+  .hamburger.isActive .bar {
+    opacity: 0;
+  }
+  
+  .mobileNav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 80%;
+    min-height: 100vh;
+    z-index: 99;
+    background-color: #1d0f33;
+    padding-top: 120px;
+    transition: 400ms;
+  }
+  
+  .mobileNav.isActive {
+    left: 25%;
+  }
+  
+  .mobileNavLink {
+    display: block;
+    margin: 0 auto 16px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    outline: 1px solid var(--headline)
+  }
+}

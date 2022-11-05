@@ -1,129 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+
 .container {
+  height: 100%;
   padding: 0 2rem;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.homePage {
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+  min-height: 100%;
+}
+
+.centerHome {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
   text-align: center;
+  font-family: 'Playfair Display', serif;
+  margin-top: -25px;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
+.info {
+  margin-bottom: 5vh;
+}
+
+.heading {
+  color: var(--headline);
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.caption {
   font-size: 1.5rem;
+  color: var(--paragraph);
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.picture {
+  background-image: url(../public/Portrait2.png);
+  width: 500px;
+  height: 500px;
+  background-size: 800px 750px;
+  background-position: 60% 20%;
+  border-radius: 50%;
+  background-color: hsl(290deg 0% 50%);
+  z-index: 90;
 }
 
-.grid {
+.flair {
+  background-color: red;
+  z-index: 95;
+  border-radius: 50% 1% 50% 50%;
+  background-color: hsl(290deg 0% 50%);
+}
+
+.leftHome, .rightHome {
   display: flex;
-  align-items: center;
+  height: 100%;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  align-items: center;
+  color: var(--paragraph);
+  font-size: x-large;
+  opacity: 50%;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.leftHome {
+  transform: rotate(270deg);
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.rightHome {
+  transform: rotate(90deg);
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.letters {
+  margin-left: 13px;
+  margin-right: 12px;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+#hireMe {
+  padding: 8px 18px;
+  margin-top: 50px;
+  background-color: transparent;
+  color: var(--headline);
+  border: 1px solid var(--headline);
+  cursor: pointer;
+  position: relative;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
+@media screen and (max-width: 875px) {
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+  .picture {
+    width: 300px;
+    height: 300px;
+    background-size: 400px 375px;
   }
-}
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
+  .heading {
+    font-size: 3rem;
   }
-  .code {
-    background: #111;
+
+  .caption {
+    font-size: 1.3rem;
   }
-  .logo img {
-    filter: invert(1);
+
+  .flair {
+    z-index: -1;
   }
+
+  .homePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftHome, .rightHome {
+    display: none;
+  }
+
 }
