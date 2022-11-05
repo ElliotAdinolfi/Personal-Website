@@ -41,8 +41,7 @@
   background: url(../public/Portrait2.png);
   width: 500px;
   height: 500px;
-  background-size: 800px 750px;
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: 60% 20%;
   border-radius: 50%;
   background-color: hsl(290deg 0% 50%);
