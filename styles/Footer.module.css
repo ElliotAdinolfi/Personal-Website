@@ -17,37 +17,21 @@
   display: none;
 }
 
-.mediumLogo {
-  filter: invert(100%);
-  opacity: 60%;
+.mediumLogo, .LILogo, .GHLogo, .TWLogo {
+  filter: brightness(0) invert(100%) opacity(60%);
+  transition: .2s;
+}
+.mediumLogo:hover, .LILogo:hover, .GHLogo:hover, .TWLogo:hover {
+  cursor: pointer;
+  filter: brightness(0) invert(100%) opacity(90%);
 }
 
-.LILogo {
-  filter: grayscale(100%) invert(100%);
-}
-
-.GHLogo {
-  opacity: 65%;
-}
-
-.TWLogo {
-  filter: grayscale(100%)
-}
-
-.mediumLogo2 {
+.mediumLogo2, .LILogo2, .GHLogo2, .TWLogo2 {
   filter: invert(100%) opacity(60%);
 }
-
-.LILogo2 {
-  filter: invert(100%) opacity(60%);
-}
-
-.GHLogo2 {
-  filter: invert(100%) opacity(60%);
-}
-
-.TWLogo2 {
-  filter: invert(100%) opacity(60%);
+.mediumLogo2:hover, .LILogo2:hover, .GHLogo2:hover, .TWLogo2:hover {
+  cursor: pointer;
+  filter: brightness(0) invert(100%) opacity(90%);
 }
 
 @media screen and (max-width: 875px) {

@@ -1,6 +1,6 @@
 import styles from '../../styles/Home.module.css';
 import Image from 'next/image';
-import ElliotHeadshot from '../../public/ElliotHeadshot.png';
+import ElliotHeadshot from '../../public/Portrait.png';
 
 const Center = () => {
 

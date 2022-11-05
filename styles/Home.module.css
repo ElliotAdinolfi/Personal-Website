@@ -38,10 +38,11 @@
 }
 
 .picture {
-  background-image: url(../public/Portrait2.png);
+  background: url(../public/Portrait2.png);
   width: 500px;
   height: 500px;
   background-size: 800px 750px;
+  background-repeat: no-repeat;
   background-position: 60% 20%;
   border-radius: 50%;
   background-color: hsl(290deg 0% 50%);
@@ -50,7 +51,7 @@
 
 .flair {
   background-color: red;
-  z-index: 95;
+  z-index: 85;
   border-radius: 50% 1% 50% 50%;
   background-color: hsl(290deg 0% 50%);
 }
@@ -79,6 +80,7 @@
 }
 
 #hireMe {
+  display: none;
   padding: 8px 18px;
   margin-top: 50px;
   background-color: transparent;
@@ -86,9 +88,14 @@
   border: 1px solid var(--headline);
   cursor: pointer;
   position: relative;
+  z-index: -1;
 }
 
 @media screen and (max-width: 875px) {
+
+  #hireMe {
+    display: flex;
+  }
 
   .picture {
     width: 300px;
