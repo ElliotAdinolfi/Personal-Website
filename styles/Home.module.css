@@ -39,8 +39,10 @@
 
 .picture {
   /* background-image: url(../public/Portrait2.png); */
-  width: 500px;
-  height: 500px;
+  min-width: 500px;
+  min-height: 470px;
+  max-width: 500px;
+  max-height: 470px;
   background-size: cover;
   background-position: 60% 20%;
   border-radius: 50%;
@@ -80,14 +82,18 @@
 
 #hireMe {
   display: none;
-  padding: 8px 18px;
+  padding: 16px 32px;
   margin-top: 50px;
   background-color: transparent;
   color: var(--headline);
   border: 1px solid var(--headline);
-  cursor: pointer;
   position: relative;
   z-index: -1;
+}
+
+#hireMe:hover {
+  cursor: pointer;
+  opacity: 50%;
 }
 
 @media screen and (max-width: 875px) {

@@ -11,13 +11,12 @@ const Center = () => {
         <p className={styles.caption}>Software Engineer and Web Developer.</p>
       </div>
       <div className={styles.flair}>
-        {/* <div className={styles.picture}></div> */}
         <Image 
         className={styles.picture}
         src={ElliotHeadshot}
         alt='Pic of me'
-        width={160}
-        height={35}
+        width={500}
+        height={470}
         />
       </div>
       <button id={styles.hireMe}>Hire Me</button>
