@@ -29,7 +29,7 @@
 .heading {
   color: var(--headline);
   font-size: 5rem;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .caption {
@@ -38,21 +38,15 @@
 }
 
 .picture {
-  /* background-image: url(../public/Portrait2.png); */
   min-width: 500px;
   min-height: 470px;
   max-width: 500px;
   max-height: 470px;
-  background-size: cover;
-  background-position: 60% 20%;
   border-radius: 50%;
   background-color: hsl(290deg 0% 50%);
-  z-index: 90;
 }
 
 .flair {
-  background-color: red;
-  z-index: 85;
   border-radius: 50% 1% 50% 50%;
   background-color: hsl(290deg 0% 50%);
 }
