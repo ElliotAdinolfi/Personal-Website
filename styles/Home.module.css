@@ -76,6 +76,7 @@
 
 #hireMe {
   display: none;
+  font-size: large;
   padding: 16px 32px;
   margin-top: 50px;
   background-color: transparent;
@@ -87,11 +88,10 @@
 
 #hireMe:hover {
   cursor: pointer;
-  opacity: 50%;
 }
 
 @media screen and (max-width: 875px) {
-
+  
   #hireMe {
     display: flex;
   }
