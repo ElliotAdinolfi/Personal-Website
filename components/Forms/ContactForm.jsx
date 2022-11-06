@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { send } from '@emailjs/browser';
 import letter from '../../public/letter.png';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const ContactForm = props => {
