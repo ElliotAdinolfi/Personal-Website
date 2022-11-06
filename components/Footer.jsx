@@ -13,7 +13,7 @@ const Footer = () => {
           className={styles.mediumLogo}
           src={Medium}
           alt='Medium Logo'
-          width={225}
+          width={210}
           height={50}
           />
       </a>
@@ -22,7 +22,7 @@ const Footer = () => {
           className={styles.LILogo}
           src={LinkedIn}
           alt='LinkedIn Logo'
-          width={160}
+          width={150}
           height={35}
         />
       </a>
@@ -31,7 +31,7 @@ const Footer = () => {
           className={styles.GHLogo}
           src={GitHub}
           alt='GitHub Logo'
-          width={155}
+          width={145}
           height={50}
         />
       </a>
