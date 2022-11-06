@@ -67,7 +67,7 @@ const ContactForm = props => {
                   />
                 <input
                   className={styles.textBox}
-                  type='text'
+                  type='email'
                   name='reply_to'
                   placeholder='Your Email'
                   value={toSend.reply_to}
@@ -85,7 +85,7 @@ const ContactForm = props => {
                   />
               </div>
               <div className={styles.buttonContainer}>
-                <button className={styles.buttons} type='cancel' onClick={clickedCancel} >Cancel</button>
+                <button className={styles.buttons}type='button' onClick={clickedCancel} >Cancel</button>
                 <button className={styles.buttons} type='submit'>Send</button>
               </div>
             </div>
