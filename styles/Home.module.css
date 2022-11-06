@@ -1,15 +1,18 @@
+@import 'variables.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
 
 .container {
-  height: 100%;
+  height: 90%;
   padding: 0 2rem;
+  margin-top: 50px;
 }
 
 .homePage {
   display: grid;
   grid-template-columns: 2fr 5fr 2fr;
-  min-height: 100%;
+  min-height: 95%;
+
 }
 
 .centerHome {
@@ -20,6 +23,7 @@
   text-align: center;
   font-family: 'Playfair Display', serif;
   margin-top: -25px;
+  z-index: -2;
 }
 
 .info {
@@ -59,6 +63,7 @@
   color: var(--paragraph);
   font-size: x-large;
   opacity: 50%;
+  z-index: -1;
 }
 
 .leftHome {

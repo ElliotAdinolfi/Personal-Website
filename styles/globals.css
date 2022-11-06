@@ -1,6 +1,16 @@
 @import 'variables.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+
+html {
+  --background: hsl(210deg 30% 8%);
+  --headline: hsl(290deg 0% 90%);
+  --paragraph: hsl(290deg 0% 75%);
+  --highlight: #e610c9;
+  --secondary: hsl(333 100% 25%);
+  --tertiary: hsl(230 100% 70%);
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */

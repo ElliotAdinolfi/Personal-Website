@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+
+.glass {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  
+}
+
+.contactForm{
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  width: 750px;
+  height: 450px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background-color: #27282a;
+  box-shadow: 0 20px 40px #27282a;
+}
+
+.formContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.contactLeft {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 80px;
+  font-size: 2rem;
+}
+
+.leftText:after {
+  content: '';
+  display: flex;
+  margin-top: 5px;
+  width: 45px;
+  height: 4px;
+  background: var(--headline);
+}
+
+.letter {
+  margin-top: 30px;
+  /* margin-left: 40px; */
+}
+
+.containerRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+}
+
+.textBox {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: border-color .2s;
+  margin-bottom: 10px;
+}
+
+.textArea {
+  max-width: 375px;
+  max-height: 120px;
+  min-height: 40px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.textBox::placeholder {
+  color: #666;
+}
+
+.textBox:focus {
+  border-bottom-color: #ddd;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 90%;
+}
+
+.buttons {
+  outline: none;
+  border: none;
+  background: none;
+  padding: 10px;
+  margin-left: 50px;
+  color: var(--headline);
+  font-size: 1.2rem;
+  transition: .3s;
+}
+
+.buttons:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 875px) {
+
+  .glass {
+    display: hidden;
+  }
+
+}
