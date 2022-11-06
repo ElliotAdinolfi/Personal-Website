@@ -85,7 +85,7 @@ const ContactForm = props => {
                   />
               </div>
               <div className={styles.buttonContainer}>
-                <button className={styles.buttons} onClick={clickedCancel} >Cancel</button>
+                <button className={styles.buttons} type='cancel' onClick={clickedCancel} >Cancel</button>
                 <button className={styles.buttons} type='submit'>Send</button>
               </div>
             </div>
