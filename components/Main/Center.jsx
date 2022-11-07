@@ -36,7 +36,12 @@ const Center = () => {
   };
 
   return (
-    <div className={styles.centerHome}>
+    <motion.div
+    className={styles.centerHome}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: .8 }}
+    >
       <div className={styles.info}>
         <p className={styles.heading}>Hi. I'm Elliot.</p>
         <p className={styles.caption}>Software Engineer and Web Developer.</p>
@@ -87,7 +92,7 @@ const Center = () => {
             />
         </motion.div>}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 };
 

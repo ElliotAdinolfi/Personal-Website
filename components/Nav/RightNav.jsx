@@ -37,8 +37,8 @@ const RightNav = () => {
   return (
     <div className={styles.rightSide}>
       <Link href='/' className={styles.navLink}>Home</Link>
-      <Link href='/' className={styles.navLink}>About</Link>
-      <Link href='/' className={styles.navLink}>Services</Link>
+      <Link href='/expertise' className={styles.navLink}>Expertise</Link>
+      {/* <Link href='/' className={styles.navLink}>Services</Link> */}
       <button id={styles.hireMe} onClick={hireMeClicked}>Hire Me</button>
       <AnimatePresence>
         {showForm && <motion.div
