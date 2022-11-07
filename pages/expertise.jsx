@@ -12,9 +12,9 @@ const About = () => {
       <Nav />
       <Left />
       <CenterExpertise />
-      <Right />
+      <Right delay={1.5} />
       <Footer />
-      <MobileFooter />
+      <MobileFooter delay={1.5}/>
     </div>
   );
 };

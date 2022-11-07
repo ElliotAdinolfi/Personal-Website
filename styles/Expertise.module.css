@@ -13,6 +13,8 @@
   display: flex;
   align-items: center;
   font-family: 'Playfair Display', serif;
+  width: 100%;
+  z-index: -1;
 }
 
 .menuContainer, .wordContainer {
@@ -32,18 +34,19 @@
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 15px;
-  background-color: var(--headline);
-  opacity: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 10px 3px #445045;
+  /* opacity: 50%; */
   transition: .3s;
 }
 
 .menuToggle:hover {
   cursor: pointer;
-  opacity: 60%;
+  /* background-color: rgba(255, 255, 255, 0.7); */
 }
 
 .menuToggle.activeMenu {
-  opacity: 90%;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .menuText, .menuText3 {
@@ -72,15 +75,67 @@
   margin-left: 1.5vw;
 }
 
+.wordContainer {
+  color: var(--headline);
+  justify-content: flex-start;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  font-size: 2rem;
+  margin-top: 5vh;
+}
+
+.textImage {
+  margin-right: 2vw;
+}
+
+.description {
+  margin-top: 3vh;
+  width: 80%;
+  font-size: 1.2rem;
+}
+
+.description > p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+
+@media screen and (max-width: 875px) {
+  .center {
+    width: 100vw;
+  }
+
+  .lastPage {
+    font-size: 1.05rem;
+  }
+
+  .description {
+    margin-top: 0;
+  }
+}
+
 @media screen and (max-width: 1215px) {
+
+  .wordContainer {
+    width: 100%;
+    height: 80vh;
+    margin-left: 3vw;
+    align-items: center;
+    justify-content: center;
+  }
 
   .menuText, .menuText3 {
     display: none;
   }
 
   .menuToggle {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     justify-content: center;
     border-radius: 50%;
     overflow: hidden;
@@ -91,6 +146,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  
+  .wordContainer {
+    max-height: 70vh;
   }
 
 }

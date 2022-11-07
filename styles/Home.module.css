@@ -66,7 +66,7 @@
   color: var(--paragraph);
   font-size: x-large;
   opacity: 50%;
-  z-index: -1;
+  z-index: -5;
 }
 
 .leftHome {
@@ -105,6 +105,7 @@
     position: relative;
     transform: 0;
   }
+  
 
   .picture {
     min-width: 250px;
