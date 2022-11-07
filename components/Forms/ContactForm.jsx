@@ -40,7 +40,7 @@ const ContactForm = props => {
   };
 
   return (
-    <div className={styles.glass}>
+    <div className={styles.glass} onClick={clickedCancel}>
       <div className={styles.contactForm}>
         <form className={styles.formContainer} onSubmit={onSubmit}>
           <div className={styles.contactLeft}>

@@ -7,6 +7,9 @@ import Left from '../components/Main/Left';
 import Footer from '../components/Footer';
 import MobileFooter from '../components/Footer/MobileFooter';
 
+import SuccessAlert from '../components/Forms/SuccessAlert';
+import ErrorAlert from '../components/Forms/ErrorAlert';
+
 export default function Home() {
   return (
     <div className={styles.container}>

@@ -9,6 +9,8 @@ html {
   --highlight: #e610c9;
   --secondary: hsl(333 100% 25%);
   --tertiary: hsl(230 100% 70%);
+  --success: hsl(149, 95%, 45%);
+  --error: hsl(341, 100%, 45%);
 }
 
 /*
