@@ -36,17 +36,34 @@ const Center = () => {
   };
 
   return (
-    <motion.div
-    className={styles.centerHome}
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: .8 }}
-    >
+    <div className={styles.centerHome}>
       <div className={styles.info}>
-        <p className={styles.heading}>Hi. I'm Elliot.</p>
-        <p className={styles.caption}>Software Engineer and Web Developer.</p>
+        <motion.span 
+        className={styles.heading}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: .8 }}
+        >Hi. </motion.span>
+        <motion.span 
+        className={styles.heading}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: .8, delay: 1 }}
+        >I'm Elliot.</motion.span>
+        <motion.div 
+        className={styles.caption}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: .8, delay: 2 }}
+        >Software Engineer and Web Developer.</motion.div>
+
       </div>
-      <div className={styles.flair}>
+      <motion.div 
+      className={styles.flair}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: .8, delay: 3 }}
+      >
         <Image 
         className={styles.picture}
         src={ElliotHeadshot}
@@ -54,7 +71,7 @@ const Center = () => {
         width={500}
         height={470}
         />
-      </div>
+      </motion.div>
       <button id={styles.hireMe} onClick={handleHireButton}>Hire Me</button>
       <AnimatePresence>
         {showForm && <motion.div
@@ -92,7 +109,7 @@ const Center = () => {
             />
         </motion.div>}
       </AnimatePresence>
-    </motion.div>
+    </div>
   );
 };
 
