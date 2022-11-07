@@ -72,7 +72,13 @@ const Center = () => {
         height={470}
         />
       </motion.div>
-      <button id={styles.hireMe} onClick={handleHireButton}>Hire Me</button>
+      <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: .8, delay: 3 }}
+      >
+        <button id={styles.hireMe} onClick={handleHireButton}>Hire Me</button>
+      </motion.div>
       <AnimatePresence>
         {showForm && <motion.div
           initial={{ opacity: 0 }}
