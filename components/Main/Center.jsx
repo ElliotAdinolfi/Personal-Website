@@ -1,8 +1,16 @@
 import styles from '../../styles/Home.module.css';
 import Image from 'next/image';
 import ElliotHeadshot from '../../public/Portrait2.png';
+import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import ContactForm from '../Forms/ContactForm';
 
 const Center = () => {
+  const [ showForm, setShowForm ] = useState(false);
+
+  const hireMeClicked = () => {
+    setShowForm(!showForm);
+  };
 
   return (
     <div className={styles.centerHome}>
@@ -19,7 +27,16 @@ const Center = () => {
         height={470}
         />
       </div>
-      <button id={styles.hireMe}>Hire Me</button>
+      <AnimatePresence>
+        {showForm && <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          >
+            <ContactForm showForm={showForm} setShowForm={setShowForm}/>
+        </motion.div>}
+      </AnimatePresence>
+      <button id={styles.hireMe} onClick={hireMeClicked}>Hire Me</button>
     </div>
   );
 };
