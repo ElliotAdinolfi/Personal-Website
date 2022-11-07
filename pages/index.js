@@ -17,9 +17,9 @@ export default function Home() {
       </Head>
       <Nav />
       <div className={styles.homePage}>
-        <Left />
+        <Left delay={3}/>
         <Center />
-        <Right />
+        <Right delay={3}/>
       </div>
       <Footer />
       <MobileFooter />
