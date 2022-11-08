@@ -10,11 +10,11 @@ const About = () => {
   return (
     <div className={styles.expertise}>
       <Nav />
-      <Left />
+      <Left delay={1.5}/>
       <CenterExpertise />
       <Right delay={1.5} />
       <Footer />
-      <MobileFooter delay={1.5}/>
+      <MobileFooter />
     </div>
   );
 };

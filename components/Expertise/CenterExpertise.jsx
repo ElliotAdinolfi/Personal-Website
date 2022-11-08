@@ -102,13 +102,10 @@ const CenterExpertise = () => {
         </div>
         <div className={`${styles.description} ${styles.lastPage}`}>
           <p>
-            Currently I'm working at OS Labs, developing Panoptic.
+            Currently I'm working at OS Labs, developing Panoptic. An open source developer tool for making fast, reliable, and accessible websites.
           </p>
           <p>
-            An open source developer tool for making fast, reliable, and accessible websites.
-          </p>
-          <p>
-            Here I made a NoSQL database, created new API endpoints, designed and implemented a user dashboard.
+            While in my current position, I've made a NoSQL database, created new API endpoints, designed and implemented a user dashboard.
           </p>
           <p>
             Previously I developed software while working at Freedom Mortgage Corp, and contributed to multiple open source projects.
