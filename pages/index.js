@@ -7,7 +7,7 @@ import Center from '../components/Main/Center';
 import Right from '../components/Main/Right';
 import Left from '../components/Main/Left';
 
-export default function Home() {
+const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -26,3 +26,5 @@ export default function Home() {
     </div>
   );
 };
+
+export default Home;
